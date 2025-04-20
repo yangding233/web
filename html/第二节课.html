@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 无序列表 -->
+    <!-- ul中可以只能包括li li中可以包括任意东西 -->
+    <ul>
+        <li>列表条目1</li>
+        <li>列表条目2</li>
+        <li>列表条目3</li>
+    </ul>
+
+    <!-- 有序列表 -->
+    <!-- ol中可以只能包括li li中可以包括任意东西 -->
+    <ol>
+        <li>列表条目1</li>
+        <li>列表条目2</li>
+        <li>列表条目3</li>
+    </ol>
+
+    <!-- 定义列表 -->
+    <!-- dl中可以只能包括dt dt中可以包括任意东西 -->
+    <dl>
+        <dt>
+           服务中心 
+        </dt>
+        <dd>
+           申请售后
+        </dd>
+        <dd>
+            售后政策
+         </dd>
+    </dl>
+
+<!-- 表格 -->
+
+<table border="1"><!-- 网页中，表格默认没有边框线，使用border属性可以为表格添加边框线 -->
+    <thead><!-- thead tbody表格结构标签,让网页容易理解 -->
+        <tr><!-- tr 行 -->
+            <th>姓名</th><!-- th表头单元格 -->
+            <th>语文</th>
+            <th>数学</th>
+            <th>英文</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>张三</td><!-- td内容单元格 -->
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>99</td>
+            <td>88</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>68</td>
+            <td>89</td>
+            <td>78</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<!-- 合并表格 -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>英文</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>张三</td>
+            <td>100</td>
+            <td rowspan="2">100</td><!-- 跨行合并rowspan -->
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>99</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td colspan="3">全市第一</td><!-- 跨列合并colspan -->
+
+        </tr>
+    </tbody>
+</table>
+
+<!-- 表单 -->
+
+<!-- input标签 -->
+文本框：<input type="text"><!-- 文本框，用于输入单行文本 --><br>
+密码：<input type="password"><!-- 密码框 --><br>
+选择：男<input type="radio"><!-- 单选框，用于输入单行文本 --><br>
+多选：<input type="checkbox"><!-- 多选框，用于输入单行文本 --><br>
+上传文件：<input type="file"><!-- 上传文件 --><br>
+
+<!-- input标签占位文本 -->
+文本框：<input type="text" placeholder="请输入文本"><br>
+密码: <input type="password" placeholder="请输入密码"><br>
+
+<!-- input标签radio -->
+选择：男<input type="radio" name="gender" checked><!-- checked作用为默认选中 -->
+      女<input type="radio" name="gender"><!-- 这里用到了分组 -->
+<br>
+<!-- input标签file -->
+上传文件：<input type="file" multiple><!-- multiple可以选择选择多个上传文件 --><br>
+
+<!-- 下拉菜单 -->
+城市：
+<select>
+    <option>北京</option>
+    <option>上海</option>
+    <option >广州</option>
+    <option selected>武汉</option><!-- selected 默认选中 -->
+</select>
+
+<!-- 文本域标签 -->
+<textarea>请输入文本</textarea>
+
+<!-- label写法 -->
+性别：
+<input type="radio" name="gender" id="man"><label for="man">男</label><!-- id中的内容要和for一样 -->
+<label><input type="radio" name="gender">女</label><!-- 这里增大了选择范围 -->
+
+<!-- 这里有两种写法，第一种是label直接包裹内容，for和id的属性值相同 -->
+<!-- 第二种是label包裹整个内容 -->
+
+<!-- 按钮buttom -->
+<br><br>
+<!-- form表单范围 -->
+<form action="">  <!-- action发送数据的地址 -->
+
+文本框：<input type="text"><!-- 文本框，用于输入单行文本 --><br>
+密码：<input type="password"><!-- 密码框 --><br>
+
+<button type="submit">点击</button><!-- 提交按钮，将数据提交到后台 -->
+<button type="reset">点击</button><!-- 重置按钮，将表单控件恢复默认值 -->
+<button type="buttom">点击</button><!-- 普通按钮，一般配合javascript -->
+</form>
+<br><br>
+
+
+<!-- div标签：大盒子 -->
+<div>这是div标签</div><!-- div标签：换行，独占一行 -->
+<div>这是div标签</div>
+<span>这是span标签</span><!-- span标签：不换行，小盒子 -->
+<span>这是span标签</span>
+
+<!-- 字符实体 -->
+<!-- 在代码中敲键盘的空格，网页只识别一个 -->
+乾坤未定，你我皆是黑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马<!-- &nbsp;是空格的意思 -->
+   &lt; p &gt;<!-- &lt;左尖括号 &gt;右尖括号 -->
+
+
+
+
+
+
+
+</body>
+</html>
+<!--  -->
