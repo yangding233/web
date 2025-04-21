@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初识css</title>
+    <link rel="stylesheet" href="./my.css">
+    <style>
+    
+    
+    /* 通配符选择器 */
+        *{
+            color: purple;
+            
+        }
+
+    /* 标签选择器 */
+
+        p{
+            color: blue;
+            font-size: 30px;
+        }
+
+/* class选择器前用.      id选择器前用# */
+
+        .red{
+            color: red;
+        }
+        .size{
+            font-size: 50px;
+        }
+
+        
+        #blue{
+                color: blue;
+            }
+
+        
+
+        .first{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+
+        .second{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+        }
+
+
+        .test1
+        {
+            font-size: 50px;         /* 文字大小 */
+            font-weight: 500;        /* 文字加粗效果 */
+            font-style: normal;      /* 清除文字倾斜效果 */
+            font-style: italic;      /* 文字倾斜效果（不常用） */
+            font-family: 楷体;       /* 文字字体  */
+            font: italic 500 50px  楷体; /* font：是否倾斜 是否加粗 字号/行高 字体 （必须按照顺序书写，否则不生效） */
+            text-align: center;   /* left左对齐（默认），center，right */   /* 文本对齐 */
+            text-decoration: ;                          /* 修饰线  */
+        
+        
+        
+        }
+
+        .test2/* 行高间距调节 */
+        {
+            font-size: 20px;
+            /* line-height: 30px; 文字间距加上下=30px */
+
+            line-height: 2 ;/* line-height: 2; 文字间距加上下= 2*20px */
+            
+            text-indent: 2em;/* 段落前两字体间隙 */
+        }
+
+        /* 文本修饰线 */
+        .test3
+        {
+            text-decoration: none;
+            text-decoration: underline;/* 下划线 */
+            text-decoration: line-through;/* 中划线 */
+            text-decoration: overline;       /* 上划线 */
+
+        }
+
+        .test4/* 文字颜色与透明度 */
+
+        {
+            background-color: aliceblue;
+            color: red;
+            color:rgb(0, 0, 255);/* rgb(red, green, blue) */
+            color: rgba(0, 0, 255, 0.3);/* rgba(red, green, blue, alpha(透明度)); */
+            color: #00f;
+        }
+
+
+    </style><!-- css要在title下面加上style -->
+</head>
+<body>
+    
+    <p>体验css</p>
+    
+    <div style="color: blue; font-size: 30px;">div的css样式</div>
+    
+    
+    <!-- class选择器 -->
+     
+    <p class="red size">红色选择器</p><!-- 一个标签可以使用多个类名 -->
+
+    <!-- id选择器，一般用来JavaScript -->
+
+    <div id="blue">这是id选择器</div>
+
+<!-- 画格子 -->
+
+    <div class="first">div1</div>
+    <div class="second">div2</div>
+
+
+
+
+
+
+
+
+<!-- 字体修饰属性--大小和粗细和倾斜 -->
+<p>测试文字大小</p>
+
+
+<div class="test1">测试文字大小</div>
+
+<div class="test2">“唔...llya再睡五分钟嘛...”😴monesy把脸埋在NiKo的睡衣里蹭来蹭去，晨光透过纱帘在她翘起的呆毛上镀了层金边。NiKo揉着monesy的脑袋轻笑：“☺️说好今天要一起去游乐园的，再不起来可就赶不上摩天轮的第一班了哦。”
+    monesy迷迷糊糊地睁开眼，嘟囔着：“可是被窝好暖和...妮妮抱抱才能起来～”说着伸出手，像只小猫一样往NiKo怀里钻。NiKo无奈地笑了笑，一把将她捞起来，轻轻拍了拍她的后背：“好啦好啦，抱抱就起来,不然一会亨特哥哥要来笑你喽。”
+    厨房里飘着烤面包的香气，hunter正忙着煎蛋，NiKo在摆弄着咖啡机。monesy蹦蹦跳跳地跑过去，从后面抱住hunter的腰：“表哥表哥，今天煎蛋要溏心的哦～”hunter被她吓了一跳，手里的铲子差点掉下来，无奈地笑道：“llya，你这样突然抱上来，蛋都要煎糊了。”
+    monesy吐了吐舌头，又凑到NiKo：“咖啡要加好多好多奶，llya怕苦～”NiKo揉了揉她的头发，宠溺地说：“知道啦，小公主的咖啡当然要甜甜的。”
+    早餐桌上，monesy一边咬着溏心蛋，一边晃着腿：“今天去游乐园，llya要坐三次摩天轮！还要吃棉花糖！”NiKo笑着递给她一片涂好果酱的面包：“好好好，都依你。不过吃完早餐得先把外套穿上，早上风大。”
+    游乐园里，monesy像只欢快的小鸟，。NiKo和hunter跟在后面，手里拿着她买的各种小玩意儿。摩天轮上，monesy趴在玻璃窗上，眼睛亮晶晶的：“妮妮，你看那边！好漂亮！”NiKo顺着她的手指望去，远处的夕阳正缓缓落下，天空被染成了橙红色。
+    “llya，过来坐好，别摔着了。”NiKo轻轻拉了她一下，monesy却顺势倒进他怀里，仰起脸笑得狡黠：“妮妮抱抱就不怕摔了～”NiKo无奈地摇摇头，却还是将她搂得更紧了些。</div>
+
+<br><br>
+<!-- 文字修饰线 -->
+<div class="test3">文字修饰线</div>
+<!-- 文字颜色与透明度 -->
+<div class="test4">文字颜色与透明度</div>
+
+
+</body>
+</html>
+<!--  -->
