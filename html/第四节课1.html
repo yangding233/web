@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+<!-- 后代选择器 -->
+<style>
+
+/* div里面的span文字颜色是红色的 */
+/* 后代选择器，选中所有后代，包含儿子孙子...... */
+
+
+/* div span{
+    color: red;
+
+} */
+
+
+
+/* 子代选择器 */
+
+/* div > span
+{
+    color: red;
+
+} */
+
+/* 并集选择器 */
+div,
+span,
+p
+{
+    color: red;
+
+}
+
+/* 交集选择器 */
+
+p.box
+{
+    color: blue;
+}
+
+/* 伪类选择器hover */
+/* 悬停时会变色 */
+
+a:link{              /* link访问前 */
+color: yellow;
+}
+
+a:visited{            /* link访问后 */
+    color: aliceblue;
+}
+a:hover{              /* hover鼠标悬停 */
+    color: red;
+}
+
+a:active{
+    color: black;    /* active点击时 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+    
+</head>
+<body>
+    <div>
+        <span>这是儿子span</span>
+        <p>
+            <span>这是孙子span</span>
+        </p>
+    
+    
+    
+    </div>
+    <p>
+        这是p
+    </p>
+
+
+    <!-- 交集选择器 -->
+    <p class="box">p含有box</p>
+    <p>p没有box</p>
+    <div class="box">div含有box</div>
+
+
+
+
+    <a href="#" >这是a标签伪类选择器</a>
+
+
+
+
+</body>
+</html>
